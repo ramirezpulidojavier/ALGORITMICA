@@ -1,0 +1,18 @@
+CC = g++
+CFLAG = -o
+
+all: TSP_PD TSP_PD_TIEMPOS 
+
+TSP_PD:
+	$(CC) TSP_PD.cpp $(CFLAG) TSP_PD
+
+TSP_PD_TIEMPOS:
+	$(CC) TSP_PD_TIEMPOS.cpp $(CFLAG) TSP_PD_TIEMPOS 
+
+clean:
+	$(RM) TSP_PD TSP_PD_TIEMPOS
+
+
+
+
+
